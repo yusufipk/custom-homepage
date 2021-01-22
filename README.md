@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# Custom Homepage
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I was typing a lot of websites to adress bar and I thought it would be good to create a minimal custom homepage for my taste.
 
-## Available Scripts
+![Image of the app](./src/img/homepage.png)
 
-In the project directory, you can run:
+## Running this program locale
 
-### `npm start`
+Run `npm install` then run `npm run`.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Adding a custom card
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+For this you need to create an array inside data folder. For example card3.js and add desired websites to array. An example;
+`export const cards = [
+<a href="https://www.protonmail.com/login" target="">
+Protonmail
+</a>,
 
-### `npm test`
+  <a href="https://www.youtube.com" target="">
+    Youtube
+  </a>,
+  <a href="https://studio.youtube.com" target="">
+    Youtube Studio
+  </a>,
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  <a href="https://www.github.com" target="">
+    Github
+  </a>,
 
-### `npm run build`
+  <a href="https://www.odysee.com" target="">
+    Odysee
+  </a>,
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  <a href="https:/www.udemy.com" target="">
+    Udemy
+  </a>,
+];`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+After adding the new array, head over to app.js and add a `<Card  title="Desired Title"  list={the.list.you.created} />
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Fetching different city's weather
 
-### `npm run eject`
+Open the `weather-fetch.jsx` inside components folder. Change api request from `istanbul` to desired city.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### Building and using app locally
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Open `package.json` and add `"homepage": "."` to first object. Then add <"deploy": "gh-pages -d build"> to the scripts section. After this save and run `npm run build`. You should be able to locally access using `index.html` in the builds folder.
