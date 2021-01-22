@@ -10,14 +10,13 @@ Run `npm install` then run `npm run`.
 
 ### Adding a custom card
 
-For this you need to create an array inside data folder. For example card3.js and add desired websites to array. An example;
+For this you need to create an array inside data folder. For example create card3.js and add desired websites to array. An example;
 
 ```javascript
 export const cards = [
 <a href="https://www.protonmail.com/login" target="">
 Protonmail
 </a>,
-
   <a href="https://www.youtube.com" target="">
     Youtube
   </a>,
@@ -39,7 +38,7 @@ Protonmail
 ];
 ```
 
-After adding the new array, head over to app.js and add a `<Card  title="Desired Title"  list={the.list.you.created} />
+After adding the new array, head over to app.js and add a `<Card title="Desired Title" list={the.list.you.created} />`
 
 ### Fetching different city's weather
 
@@ -47,4 +46,4 @@ Open the `weather-fetch.jsx` inside components folder. Change api request from `
 
 #### Building and using app locally
 
-Open `package.json` and add `"homepage": "."` to first object. Then add <"deploy": "gh-pages -d build"> to the scripts section. After this save and run `npm run build`. You should be able to locally access using `index.html` in the builds folder.
+Open `package.json` and add `"homepage": "."` to first object. Then add `"deploy": "gh-pages -d build"` to the scripts section. After this save and run `npm run build`. You should be able to locally access using `index.html` in the builds folder.
