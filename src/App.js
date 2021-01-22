@@ -3,6 +3,8 @@ import React, { Component } from "react";
 import Time from "./components/time/time-component";
 import Forecast from "./components/fetch weather/weather-fetch";
 import Card from "./components/card/card-component";
+import { cards } from "./data/card1";
+import { card2 } from "./data/card2";
 
 class App extends Component {
   constructor() {
@@ -10,14 +12,16 @@ class App extends Component {
     this.state = {};
   }
   render() {
-    const card1 = ["deneme", "deneme2"];
     return (
       <div className="App">
         <h1>
           <Time />
         </h1>
         <Forecast />
-        <Card list={card1} />
+        <div className="Cards">
+          <Card list={cards} />
+          <Card list={card2} />
+        </div>
       </div>
     );
   }

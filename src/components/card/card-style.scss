@@ -1,22 +1,29 @@
+.title {
+  text-align: center;
+}
+
 .card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 250px;
+  margin-left: 20px;
+  width: 200px;
+  height: 260px;
+  background-color: #242f34;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 10px;
 
-  .list {
-    margin-left: 40px;
-    width: 200px;
-    height: 230px;
-    background-color: #242f34;
-    border: 1px solid grey;
-    border-radius: 5px;
-    padding: 20px;
+  .text {
+    text-align: center;
+    list-style: none;
+    line-height: 30px;
+  }
 
-    .text {
-      text-align: center;
-      list-style: none;
-      line-height: 30px;
-    }
+  a:link {
+    color: white;
+  } /* unvisited link */
+  a:visited {
+    color: white;
+  } /* visited link */
+  a:active {
+    color: white;
   }
 }
