@@ -11,7 +11,9 @@ Run `npm install` then run `npm run`.
 ### Adding a custom card
 
 For this you need to create an array inside data folder. For example card3.js and add desired websites to array. An example;
-`export const cards = [
+
+```javascript
+export const cards = [
 <a href="https://www.protonmail.com/login" target="">
 Protonmail
 </a>,
@@ -33,8 +35,9 @@ Protonmail
 
   <a href="https:/www.udemy.com" target="">
     Udemy
-  </a>,
-];`
+  </a>`,
+];
+```
 
 After adding the new array, head over to app.js and add a `<Card  title="Desired Title"  list={the.list.you.created} />
 
