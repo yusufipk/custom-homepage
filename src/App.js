@@ -19,8 +19,8 @@ class App extends Component {
         </h1>
         <Forecast />
         <div className="Cards">
-          <Card list={cards} />
-          <Card list={card2} />
+          <Card title="Sık Girdiğim Siteler" list={cards} />
+          <Card title="Reddit" list={card2} />
         </div>
       </div>
     );
