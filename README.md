@@ -43,7 +43,7 @@ After adding the new array, head over to app.js and add a `<Card title="Desired 
 
 ### Fetching different city's weather
 
-Open the `weather-fetch.jsx` inside components folder. Change api request from `istanbul` to desired city.
+Open the `weather-fetch.jsx` inside components folder. Change api request from `istanbul` to desired city. You will need your own API key.
 
 #### Building and using app locally
 
