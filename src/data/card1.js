@@ -18,7 +18,7 @@ export const cards = [
     Odysee
   </a>,
 
-  <a href="https:/www.udemy.com" target="">
+  <a href="https://www.udemy.com" target="">
     Udemy
   </a>,
 ];
