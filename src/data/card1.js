@@ -1,24 +1,6 @@
-export const cards = [
-  <a href="https://www.protonmail.com/login" target="">
-    Protonmail
-  </a>,
+import jsonData from './source/card1.json';
 
-  <a href="https://www.youtube.com" target="">
-    Youtube
-  </a>,
-  <a href="https://studio.youtube.com" target="">
-    Youtube Studio
-  </a>,
+export const cards = jsonData.map((card) => (
+    <a href={card.href} target="">{card.text}</a>
+));
 
-  <a href="https://www.github.com" target="">
-    Github
-  </a>,
-
-  <a href="https://www.odysee.com" target="">
-    Odysee
-  </a>,
-
-  <a href="https:/www.udemy.com" target="">
-    Udemy
-  </a>,
-];

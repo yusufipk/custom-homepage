@@ -1,6 +1,5 @@
-export const card2 = [
-  <a href="https://www.reddit.com/r/dataisbeautiful/">r/DataIsBeautiful</a>,
-  <a href="https://www.reddit.com/r/firefox/">r/Firefox</a>,
-  <a href="https://www.reddit.com/r/linux/">r/Linux</a>,
-  <a href="https://www.reddit.com/r/privacy/">r/Privacy</a>,
-];
+import jsonData from './source/card2.json';
+
+export const card2 = jsonData.map((card) => (
+    <a href={card.href}>{card.text}</a>
+));
